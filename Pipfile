@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+pylint = "*"
+djangorestframework = "*"
+mysqlclient = "*"
+django-dotenv = "*"
+pygments = "*"
+djangorestframework-xml = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+printfoo = "python -c \"print('foo')\""
+start-dev = "python ./scripts/manage.py runserver --settings=api_server.settings.dev"
+start-prod = "python ./scripts/manage.py runserver --settings=api_server.settings.prod"
